@@ -2,28 +2,30 @@
   "name": "react-practice",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://YuriyPilipenkoKH.github.io/my-react-practice/",
+  "homepage": "https://YuriyPilipenkoKH.github.io/my-react-practice/",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-router-dom": "^6.4.5",
-     "axios": "^1.2.1",
+    "axios": "^1.2.1",
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.6",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.10",
-    "prop-types": "^15.8.1",
     "web-vitals": "^2.1.3"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/YuriyPilipenkoKH/my-react-practice.git"
   },
   "scripts": {
-     "go": "set PORT=3030 && react-scripts start",
+    "go": "set PORT=3030 && react-scripts start",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
