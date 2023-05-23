@@ -6,7 +6,7 @@ const DashboardPage = () => {
    UseLogOutRedirect()
     
   return (
-    <div>Dashboard     
+    <div>Dashboard      
     </div>
   )
 }
