@@ -4,6 +4,7 @@ import { Container } from 'components/container/Container';
 import ToTopButton from "components/ToTopButton/ToTopButton";
 import Layout from 'components/Layout/Layout';
 import LoginPage from 'pages/LoginPage/LoginPage';
+import DashboardPage from 'pages/DashboardPage/DashboardPage';
 
 
  const App = () => {
@@ -13,6 +14,7 @@ import LoginPage from 'pages/LoginPage/LoginPage';
       <Routes>
         <Route path='/' element = {<Layout/>}>
           <Route path='login' element = {<LoginPage/>}/>
+          <Route path='dashboard' element = {<DashboardPage/>}/>
           <Route path='*' element = {<Navigate to='/' replace />}/>
         </Route>
       </Routes>

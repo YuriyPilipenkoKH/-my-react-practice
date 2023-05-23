@@ -14,6 +14,7 @@ const UserMenu = () => {
         {login}
         <button 
         onClick={handleLogOut}
+        type='button'
         >Log Out</button>
     </div>
   )
