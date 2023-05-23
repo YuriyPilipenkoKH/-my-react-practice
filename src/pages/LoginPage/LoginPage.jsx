@@ -1,13 +1,10 @@
 import React from 'react'
+import { LoginForm  } from 'components/LoginForm/LoginForm'
 
 const LoginPage = () => {
   return (
     <div>
-      <form >
-        <input autoComplete='off' type="text" name = 'login'/>
-        <br />
-        <button type='submit'>Log IN</button>
-      </form>
+        <LoginForm></LoginForm>
     </div>
   )
 }
