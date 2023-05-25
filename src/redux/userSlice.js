@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 export const userSlice = createSlice({
 
 
@@ -12,6 +13,7 @@ export const userSlice = createSlice({
         logIn(state, action) {
             state.login = action.payload
             state.isLoggedIn =true
+        
         },
         
         logOut(state) {
