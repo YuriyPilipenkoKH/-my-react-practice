@@ -8,7 +8,7 @@ export const store = configureStore({
 
     reducer: {
         account: cashSlice.reducer,
-        customer: customerSlice.reducer,
+        customers: customerSlice.reducer,
     },
 
 

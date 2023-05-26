@@ -16,23 +16,23 @@ import { createSlice } from "@reduxjs/toolkit";
 // }
 export const customerSlice = createSlice({
 
-    name: 'customer',
+    name: 'customers',
     initialState: {
-        cash: 500,
+        customers: [],
       
     },
     reducers: {
         ADD_CUSTOMER(state, action) {
-           return {...state, cash: state.cash + action.payload}
+           return {...state, customers: [...state.customers, action.payload]}
 
         
         },
         
-        GET_CUSTOMER(state, action) {
-            return {...state, cash: state.cash - action.payload}
+        REMOVE_CUSTOMER(state, action) {
+            return {...state, customers: [...state.customers.filter(customer => customer.id !== action.payload)]}
         },
 
     }
 })
 
-export const {ADD_CASH, GET_CASH}  = customerSlice.actions
+export const {ADD_CUSTOMER,  REMOVE_CUSTOMER}  = customerSlice.actions
