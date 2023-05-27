@@ -24,7 +24,10 @@ const CustomerBar = () => {
     <>
  <div style={{display: 'flex', gap: '20px '}}>
    
-    <button onClick={() => addCustomer(prompt())}>Add customer</button>
+    <button 
+    style={{padding: '8px 16px' , backgroundColor:'#777' ,color: "#eee", border: 'transparent'}}
+    onClick={() => addCustomer(prompt())}
+    >Add customer</button>
     
     </div>
     {customers.length > 0  
@@ -34,7 +37,7 @@ const CustomerBar = () => {
         <div 
         onClick={() => rewmoveCustomer(customer)}
         key={customer.id}
-        style={{fontSize: '1.5em', border: '1px solid #222' , padding: '8px'}}
+        style={{fontSize: '1.5em', border: '1px solid #222' , padding: '4px 16px'}}
         >{customer.name}</div>
         )}
     </div>

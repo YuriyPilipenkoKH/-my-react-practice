@@ -23,6 +23,8 @@ export const cashSlice = createSlice({
     },
     reducers: {
         ADD_CASH(state, action) {
+            console.log(state.cash);
+            console.log(action.payload);
            return {...state, cash: state.cash + action.payload}
 
         
