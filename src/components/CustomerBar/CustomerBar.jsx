@@ -12,7 +12,10 @@ const CustomerBar = () => {
         dispatch(ADD_CUSTOMER(customer))
     }
     const rewmoveCustomer =(customer) => {
-        dispatch(REMOVE_CUSTOMER(customer.id))
+        if (window.confirm(`Do you really want to remove ${customer.name} ?` )) {
+            dispatch(REMOVE_CUSTOMER(customer.id))
+          }
+        
     }
 
     const customers = useSelector(state => state.customers.customers )
@@ -26,7 +29,7 @@ const CustomerBar = () => {
     </div>
     {customers.length > 0  
     ?
-    <div>
+    <div style={{display: 'grid', gap: '8px'}}>
       {customers.map(customer => 
         <div 
         onClick={() => rewmoveCustomer(customer)}
