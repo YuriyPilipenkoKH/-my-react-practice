@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.div`
     max-width: 1200px;
-    height: 100vh;
+    /* height: 100vh; */
     display: grid;
-    grid-template-rows: 90px auto  90px;
+    /* grid-template-rows: 90px auto  90px; */
     place-items: center;
     grid-gap: 30px;
     background-color: var(--body-color);
