@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
-export const userSlice = createSlice({
+export const user1Slice = createSlice({
 
 
     name: 'user',
@@ -24,4 +24,4 @@ export const userSlice = createSlice({
     }
 })
 
-export const {logIn, logOut}  = userSlice.actions
+export const {logIn, logOut}  = user1Slice.actions

@@ -1,13 +1,13 @@
-import React from 'react'
-import {  useSelector } from 'react-redux'
 import { useActions } from 'hooks/useActions';
+import useFavorites from 'hooks/useFavorites';
 
 const CarItem = ({car}) => {
     // const favorites = useSelector(state => {
     //     console.log(state)
     //    return state.favorites})
-    const {favorites}  = useSelector(state => state)
-    console.log(favorites);
+    // const {favorites}  = useSelector(state => state)
+    // console.log(favorites);
+    const {favorites} = useFavorites()
 
     // const dispatch = useDispatch()
     const {toggleFavorites} = useActions()
