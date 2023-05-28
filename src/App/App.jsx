@@ -14,26 +14,28 @@ import User from 'components/User/User';
         <span style={{fontWeight: '600' , padding: '4px 8px' , backgroundColor: '#219652', width:'26px'}}>{favorites.length}</span>
       </div>
 
-      <User></User>
       
+
         <CarItem
         car ={{
           id: 1,
-          name: 'ML-270',
+          name: 'Honda',
         }}
         />
         <CarItem
         car ={{
           id: 2,
-          name: 'Camry VX40', 
+          name: 'Toyota', 
         }}
         />
         <CarItem
         car ={{
           id: 3,
-          name: 'Compass',
+          name: 'Nissan',
         }}
         />
+
+      <User/>
     </Container>
   )
 }

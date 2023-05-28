@@ -6,7 +6,7 @@ const reducers = combineReducers({
     favorites: favoritesReducer,
     user: userSlice.reducer,
 })
-console.log(reducers);
+
 
 export const store = configureStore({
 
