@@ -10,11 +10,12 @@ const {isLoading, error, user} = useSelector(state => state.user)
 // console.log(actions);
 
 const {getUserById} = useActions()
+console.log(getUserById);
 
   return (
     <div>
         <button 
-        onClick={() => getUserById(1)}
+        onClick={() => getUserById(1)} 
         >Get user</button>
         {isLoading 
           ? <div>Loading...</div>
